@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E56FC88A1CAB00EF00B0EA28 /* ResponseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E56FC8891CAB00EF00B0EA28 /* ResponseCell.m */; };
 		E5A84C3B1CAAAA3900D86470 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A84C3A1CAAAA3900D86470 /* main.m */; };
 		E5A84C3E1CAAAA3900D86470 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A84C3D1CAAAA3900D86470 /* AppDelegate.m */; };
 		E5A84C411CAAAA3900D86470 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A84C401CAAAA3900D86470 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E56FC8881CAB00EF00B0EA28 /* ResponseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseCell.h; sourceTree = "<group>"; };
+		E56FC8891CAB00EF00B0EA28 /* ResponseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseCell.m; sourceTree = "<group>"; };
 		E5A84C351CAAAA3900D86470 /* Acronalism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acronalism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A84C391CAAAA3900D86470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5A84C3A1CAAAA3900D86470 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +63,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E56FC88B1CAB014D00B0EA28 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E56FC8881CAB00EF00B0EA28 /* ResponseCell.h */,
+				E56FC8891CAB00EF00B0EA28 /* ResponseCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		E56FC88C1CAB016600B0EA28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		E5A84C2C1CAAAA3900D86470 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +100,8 @@
 		E5A84C371CAAAA3900D86470 /* Acronalism */ = {
 			isa = PBXGroup;
 			children = (
+				E56FC88C1CAB016600B0EA28 /* Model */,
+				E5A84C5E1CAB001900D86470 /* View */,
 				E5A84C3C1CAAAA3900D86470 /* AppDelegate.h */,
 				E5A84C3D1CAAAA3900D86470 /* AppDelegate.m */,
 				E5A84C3F1CAAAA3900D86470 /* ViewController.h */,
@@ -117,6 +138,14 @@
 				E5A84C531CAAAA3900D86470 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5A84C5E1CAB001900D86470 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E56FC88B1CAB014D00B0EA28 /* Cell */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56FC88A1CAB00EF00B0EA28 /* ResponseCell.m in Sources */,
 				E5A84C411CAAAA3900D86470 /* ViewController.m in Sources */,
 				E5A84C3E1CAAAA3900D86470 /* AppDelegate.m in Sources */,
 				E5A84C3B1CAAAA3900D86470 /* main.m in Sources */,
@@ -418,6 +448,7 @@
 				E5A84C5A1CAAAA3900D86470 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5A84C5B1CAAAA3900D86470 /* Build configuration list for PBXNativeTarget "AcronalismTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +457,7 @@
 				E5A84C5D1CAAAA3900D86470 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

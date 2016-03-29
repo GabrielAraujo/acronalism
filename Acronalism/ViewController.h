@@ -10,6 +10,13 @@
 
 @interface ViewController : UIViewController
 
+//Outlet
+@property (weak, nonatomic) IBOutlet UILabel *labelTitle;
+@property (weak, nonatomic) IBOutlet UITextField *txtSearch;
+@property (weak, nonatomic) IBOutlet UIButton *btnSearch;
+
+//Action
+- (IBAction)btnSearchTapped:(UIButton *)sender;
 
 @end
 

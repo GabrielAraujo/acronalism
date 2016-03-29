@@ -24,4 +24,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnSearchTapped:(UIButton *)sender {
+}
 @end
