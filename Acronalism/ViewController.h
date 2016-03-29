@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Acronym.h"
 
 @interface ViewController : UIViewController
 
@@ -14,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet UITextField *txtSearch;
 @property (weak, nonatomic) IBOutlet UIButton *btnSearch;
+
+@property (strong, nonatomic) Acronym *acronym;
 
 //Action
 - (IBAction)btnSearchTapped:(UIButton *)sender;

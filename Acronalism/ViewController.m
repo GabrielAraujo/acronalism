@@ -10,9 +10,12 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
+
+@synthesize acronym;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,5 +28,17 @@
 }
 
 - (IBAction)btnSearchTapped:(UIButton *)sender {
+    if ([self.txtSearch.text isEqualToString:@""] || !self.txtSearch.text) {
+        //Error, no values on textfield
+    }else{
+        acronym = [[Acronym alloc] init];
+        [acronym fetchAllWithAcromyn:self.txtSearch.text completion:^(BOOL success, NSError *error) {
+            if (success) {
+                
+            }else{
+                //Error
+            }
+        }];
+    }
 }
 @end

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		215489043DFE27CC5D7B05BB /* libPods-Acronalism.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F562421E52318FD68575002 /* libPods-Acronalism.a */; };
+		E50E2CFF1CAB3C9E000FDB0B /* Acromine.m in Sources */ = {isa = PBXBuildFile; fileRef = E50E2CFE1CAB3C9E000FDB0B /* Acromine.m */; };
+		E54C30E71CAB09E8008040BA /* Acronym.m in Sources */ = {isa = PBXBuildFile; fileRef = E54C30E61CAB09E8008040BA /* Acronym.m */; };
+		E54C30EA1CAB12E8008040BA /* Terms.m in Sources */ = {isa = PBXBuildFile; fileRef = E54C30E91CAB12E8008040BA /* Terms.m */; };
+		E54C30ED1CAB1326008040BA /* Variants.m in Sources */ = {isa = PBXBuildFile; fileRef = E54C30EC1CAB1326008040BA /* Variants.m */; };
 		E56FC88A1CAB00EF00B0EA28 /* ResponseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E56FC8891CAB00EF00B0EA28 /* ResponseCell.m */; };
 		E5A84C3B1CAAAA3900D86470 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A84C3A1CAAAA3900D86470 /* main.m */; };
 		E5A84C3E1CAAAA3900D86470 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A84C3D1CAAAA3900D86470 /* AppDelegate.m */; };
@@ -28,6 +33,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35365FC0CB3954E162DE33F6 /* Pods-Acronalism.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acronalism.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Acronalism/Pods-Acronalism.debug.xcconfig"; sourceTree = "<group>"; };
+		9F562421E52318FD68575002 /* libPods-Acronalism.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Acronalism.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD017A7BC25E5893D709437A /* Pods-Acronalism.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acronalism.release.xcconfig"; path = "Pods/Target Support Files/Pods-Acronalism/Pods-Acronalism.release.xcconfig"; sourceTree = "<group>"; };
+		E50E2CFD1CAB3C9E000FDB0B /* Acromine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acromine.h; sourceTree = "<group>"; };
+		E50E2CFE1CAB3C9E000FDB0B /* Acromine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acromine.m; sourceTree = "<group>"; };
+		E54C30E51CAB09E8008040BA /* Acronym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acronym.h; sourceTree = "<group>"; };
+		E54C30E61CAB09E8008040BA /* Acronym.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acronym.m; sourceTree = "<group>"; };
+		E54C30E81CAB12E8008040BA /* Terms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terms.h; sourceTree = "<group>"; };
+		E54C30E91CAB12E8008040BA /* Terms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Terms.m; sourceTree = "<group>"; };
+		E54C30EB1CAB1326008040BA /* Variants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variants.h; sourceTree = "<group>"; };
+		E54C30EC1CAB1326008040BA /* Variants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Variants.m; sourceTree = "<group>"; };
 		E56FC8881CAB00EF00B0EA28 /* ResponseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseCell.h; sourceTree = "<group>"; };
 		E56FC8891CAB00EF00B0EA28 /* ResponseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseCell.m; sourceTree = "<group>"; };
 		E5A84C351CAAAA3900D86470 /* Acronalism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acronalism.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				215489043DFE27CC5D7B05BB /* libPods-Acronalism.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		120F576B9FA39A0176A8E290 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35365FC0CB3954E162DE33F6 /* Pods-Acronalism.debug.xcconfig */,
+				DD017A7BC25E5893D709437A /* Pods-Acronalism.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		56EB8FEC43FA0276A34B437E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F562421E52318FD68575002 /* libPods-Acronalism.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E50E2CFC1CAB3C8A000FDB0B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E50E2CFD1CAB3C9E000FDB0B /* Acromine.h */,
+				E50E2CFE1CAB3C9E000FDB0B /* Acromine.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		E56FC88B1CAB014D00B0EA28 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +118,12 @@
 		E56FC88C1CAB016600B0EA28 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E54C30E81CAB12E8008040BA /* Terms.h */,
+				E54C30E91CAB12E8008040BA /* Terms.m */,
+				E54C30E51CAB09E8008040BA /* Acronym.h */,
+				E54C30E61CAB09E8008040BA /* Acronym.m */,
+				E54C30EB1CAB1326008040BA /* Variants.h */,
+				E54C30EC1CAB1326008040BA /* Variants.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -85,6 +134,8 @@
 				E5A84C371CAAAA3900D86470 /* Acronalism */,
 				E5A84C511CAAAA3900D86470 /* AcronalismTests */,
 				E5A84C361CAAAA3900D86470 /* Products */,
+				120F576B9FA39A0176A8E290 /* Pods */,
+				56EB8FEC43FA0276A34B437E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +151,7 @@
 		E5A84C371CAAAA3900D86470 /* Acronalism */ = {
 			isa = PBXGroup;
 			children = (
+				E50E2CFC1CAB3C8A000FDB0B /* Network */,
 				E56FC88C1CAB016600B0EA28 /* Model */,
 				E5A84C5E1CAB001900D86470 /* View */,
 				E5A84C3C1CAAAA3900D86470 /* AppDelegate.h */,
@@ -155,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5A84C581CAAAA3900D86470 /* Build configuration list for PBXNativeTarget "Acronalism" */;
 			buildPhases = (
+				25E26D7914C5BE37060BF549 /* Check Pods Manifest.lock */,
 				E5A84C311CAAAA3900D86470 /* Sources */,
 				E5A84C321CAAAA3900D86470 /* Frameworks */,
 				E5A84C331CAAAA3900D86470 /* Resources */,
+				D8C294248A9239549A00C5AE /* Embed Pods Frameworks */,
+				1515A01D1508E8ABA85909D1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,7 +247,7 @@
 		E5A84C2D1CAAAA3900D86470 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Gabriel Araujo";
 				TargetAttributes = {
 					E5A84C341CAAAA3900D86470 = {
@@ -243,6 +298,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1515A01D1508E8ABA85909D1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Acronalism/Pods-Acronalism-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25E26D7914C5BE37060BF549 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8C294248A9239549A00C5AE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Acronalism/Pods-Acronalism-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E5A84C311CAAAA3900D86470 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -250,6 +353,10 @@
 			files = (
 				E56FC88A1CAB00EF00B0EA28 /* ResponseCell.m in Sources */,
 				E5A84C411CAAAA3900D86470 /* ViewController.m in Sources */,
+				E54C30E71CAB09E8008040BA /* Acronym.m in Sources */,
+				E50E2CFF1CAB3C9E000FDB0B /* Acromine.m in Sources */,
+				E54C30ED1CAB1326008040BA /* Variants.m in Sources */,
+				E54C30EA1CAB12E8008040BA /* Terms.m in Sources */,
 				E5A84C3E1CAAAA3900D86470 /* AppDelegate.m in Sources */,
 				E5A84C3B1CAAAA3900D86470 /* main.m in Sources */,
 			);
@@ -314,6 +421,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -375,22 +483,26 @@
 		};
 		E5A84C591CAAAA3900D86470 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35365FC0CB3954E162DE33F6 /* Pods-Acronalism.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Acronalism/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CA.GA.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		E5A84C5A1CAAAA3900D86470 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD017A7BC25E5893D709437A /* Pods-Acronalism.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Acronalism/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CA.GA.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -409,6 +521,7 @@
 				);
 				INFOPLIST_FILE = AcronalismTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CA.GA.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Acronalism.app/Acronalism";
 			};
@@ -424,6 +537,7 @@
 				);
 				INFOPLIST_FILE = AcronalismTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CA.GA.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Acronalism.app/Acronalism";
 			};
