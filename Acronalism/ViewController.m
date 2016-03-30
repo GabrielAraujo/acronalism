@@ -31,22 +31,30 @@
 }
 
 - (IBAction)btnSearchTapped:(UIButton *)sender {
+    //Remove keyboard
     [self.view endEditing:YES];
+    //Add HUD
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     if ([self.txtSearch.text isEqualToString:@""] || !self.txtSearch.text) {
         //Error, no values on textfield
+        //Create custom error
         NSDictionary *userInfo = [NSDictionary dictionaryWithObject:@"Textfield is clean.. Type something to search" forKey:NSLocalizedDescriptionKey];
         NSError *error = [[NSError alloc] initWithDomain:@"Response" code:-404 userInfo:userInfo];
+        //Remove HUD
         [MBProgressHUD hideHUDForView:self.view animated:YES];
+        //Display error message
         [self displayErrorMessageWithError:error];
     }else{
         acronym = [[Acronym alloc] init];
+        //Fetch data
         [acronym fetchAllWithAcromyn:self.txtSearch.text completion:^(BOOL success, NSError *error) {
             if (success) {
+                //Removes HUD and reload table view data
                 [MBProgressHUD hideHUDForView:self.view animated:YES];
                 [self.tableView reloadData];
             }else{
                 //Error
+                //Removes HUD and display error message
                 [MBProgressHUD hideHUDForView:self.view animated:YES];
                 [self displayErrorMessageWithError:error];
             }
@@ -56,6 +64,7 @@
 
 //Helper
 -(void)displayErrorMessageWithError:(NSError *)error {
+    //Alert message
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                     message:error.localizedDescription
                                                    delegate:nil
@@ -66,6 +75,7 @@
 
 //Segue
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    //Add information to the VC to display the selected item
     if ([segue.identifier isEqualToString:@"VCToVariables"]) {
         if (self.acronym) {
             VariablesViewController *VC = (VariablesViewController *)segue.destinationViewController;

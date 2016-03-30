@@ -23,6 +23,7 @@
 - (id)init {
     self = [super init];
     if (self) {
+        //Configure the HTTP Session manager
         NSString *url = @"http://www.nactem.ac.uk/software/acromine/";
         self.manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString: url]];
         self.manager.responseSerializer = [AFJSONResponseSerializer serializer];
@@ -38,6 +39,7 @@
     return self;
 }
 
+//Runs the request to fetch the results
 + (void)getAcronymWith:(NSString *)_acronym success:(void (^)(NSURLSessionDataTask *task, id response))_success error:(void (^)(NSURLSessionDataTask *task, NSError *error))_error {
     NSCharacterSet *charSet = [NSCharacterSet whitespaceCharacterSet];
     NSString *withoutSpaceString = [_acronym stringByTrimmingCharactersInSet:charSet];

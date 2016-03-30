@@ -39,6 +39,7 @@
 */
 
 - (IBAction)btnCloseTapped:(UIButton *)sender {
+    //Return to the previous view
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
