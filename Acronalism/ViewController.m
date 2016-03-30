@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ResponseCell.h"
 #import "Terms.h"
+#import "MBProgressHUD.h"
 
 @interface ViewController ()
 
@@ -30,18 +31,22 @@
 
 - (IBAction)btnSearchTapped:(UIButton *)sender {
     [self.view endEditing:YES];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     if ([self.txtSearch.text isEqualToString:@""] || !self.txtSearch.text) {
         //Error, no values on textfield
         NSDictionary *userInfo = [NSDictionary dictionaryWithObject:@"Textfield is clean.. Type something to search" forKey:NSLocalizedDescriptionKey];
         NSError *error = [[NSError alloc] initWithDomain:@"Response" code:-404 userInfo:userInfo];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         [self displayErrorMessageWithError:error];
     }else{
         acronym = [[Acronym alloc] init];
         [acronym fetchAllWithAcromyn:self.txtSearch.text completion:^(BOOL success, NSError *error) {
             if (success) {
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
                 [self.tableView reloadData];
             }else{
                 //Error
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
                 [self displayErrorMessageWithError:error];
             }
         }];
