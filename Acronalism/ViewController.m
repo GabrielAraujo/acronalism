@@ -10,6 +10,7 @@
 #import "ResponseCell.h"
 #import "Terms.h"
 #import "MBProgressHUD.h"
+#import "VariablesViewController.h"
 
 @interface ViewController ()
 
@@ -63,6 +64,17 @@
     [alert show];
 }
 
+//Segue
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"VCToVariables"]) {
+        if (self.acronym) {
+            VariablesViewController *VC = (VariablesViewController *)segue.destinationViewController;
+            VC.acronym = self.acronym;
+            VC.selectedTerm = [acronym getTerms][((NSIndexPath *)sender).row];
+        }
+    }
+}
+
 //Table View
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (self.acronym) {
@@ -87,6 +99,10 @@
     cell.lblSinceValue.text = [since stringValue];
     
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"VCToVariables" sender:indexPath];
 }
 
 @end

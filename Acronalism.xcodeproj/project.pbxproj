@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		215489043DFE27CC5D7B05BB /* libPods-Acronalism.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F562421E52318FD68575002 /* libPods-Acronalism.a */; };
 		E50E2CFF1CAB3C9E000FDB0B /* Acromine.m in Sources */ = {isa = PBXBuildFile; fileRef = E50E2CFE1CAB3C9E000FDB0B /* Acromine.m */; };
+		E53F3F891CAB768E00A9E108 /* VariablesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E53F3F881CAB768E00A9E108 /* VariablesViewController.m */; };
 		E54C30E71CAB09E8008040BA /* Acronym.m in Sources */ = {isa = PBXBuildFile; fileRef = E54C30E61CAB09E8008040BA /* Acronym.m */; };
 		E54C30EA1CAB12E8008040BA /* Terms.m in Sources */ = {isa = PBXBuildFile; fileRef = E54C30E91CAB12E8008040BA /* Terms.m */; };
 		E54C30ED1CAB1326008040BA /* Variants.m in Sources */ = {isa = PBXBuildFile; fileRef = E54C30EC1CAB1326008040BA /* Variants.m */; };
@@ -38,6 +39,8 @@
 		DD017A7BC25E5893D709437A /* Pods-Acronalism.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acronalism.release.xcconfig"; path = "Pods/Target Support Files/Pods-Acronalism/Pods-Acronalism.release.xcconfig"; sourceTree = "<group>"; };
 		E50E2CFD1CAB3C9E000FDB0B /* Acromine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acromine.h; sourceTree = "<group>"; };
 		E50E2CFE1CAB3C9E000FDB0B /* Acromine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acromine.m; sourceTree = "<group>"; };
+		E53F3F871CAB768E00A9E108 /* VariablesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariablesViewController.h; sourceTree = "<group>"; };
+		E53F3F881CAB768E00A9E108 /* VariablesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariablesViewController.m; sourceTree = "<group>"; };
 		E54C30E51CAB09E8008040BA /* Acronym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acronym.h; sourceTree = "<group>"; };
 		E54C30E61CAB09E8008040BA /* Acronym.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acronym.m; sourceTree = "<group>"; };
 		E54C30E81CAB12E8008040BA /* Terms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terms.h; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 				E5A84C3D1CAAAA3900D86470 /* AppDelegate.m */,
 				E5A84C3F1CAAAA3900D86470 /* ViewController.h */,
 				E5A84C401CAAAA3900D86470 /* ViewController.m */,
+				E53F3F871CAB768E00A9E108 /* VariablesViewController.h */,
+				E53F3F881CAB768E00A9E108 /* VariablesViewController.m */,
 				E5A84C421CAAAA3900D86470 /* Main.storyboard */,
 				E5A84C451CAAAA3900D86470 /* Images.xcassets */,
 				E5A84C471CAAAA3900D86470 /* LaunchScreen.xib */,
@@ -351,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53F3F891CAB768E00A9E108 /* VariablesViewController.m in Sources */,
 				E56FC88A1CAB00EF00B0EA28 /* ResponseCell.m in Sources */,
 				E5A84C411CAAAA3900D86470 /* ViewController.m in Sources */,
 				E54C30E71CAB09E8008040BA /* Acronym.m in Sources */,

@@ -47,7 +47,7 @@
                     NSNumber *freq = item[@"freq"];
                     NSString *text = item[@"lf"];
                     NSNumber *since = item[@"since"];
-                    NSMutableArray *variants;
+                    NSMutableArray *variants = [[NSMutableArray alloc] init];
                     Variants *variant = NULL;
                     for (NSDictionary *subItem in item[@"vars"]) {
                         NSNumber *subFreq = subItem[@"freq"];
