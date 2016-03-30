@@ -9,6 +9,7 @@
 #import "Acronym.h"
 #import "Acromine.h"
 #import "Terms.h"
+#import "Variants.h"
 
 @implementation Acronym
 
@@ -40,17 +41,29 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             if(((NSArray*)response).count > 0) {
                 NSArray *arrayLFS = response[0][@"lfs"];
+                terms = [[NSMutableArray alloc] init];
                 Terms *term = NULL;
                 for (NSDictionary *item in arrayLFS) {
-                    NSNumber *iii = item[@"freq"];
+                    NSNumber *freq = item[@"freq"];
                     NSString *text = item[@"lf"];
-                    int freq;
                     NSNumber *since = item[@"since"];
                     NSMutableArray *variants;
+                    Variants *variant = NULL;
+                    for (NSDictionary *subItem in item[@"vars"]) {
+                        NSNumber *subFreq = subItem[@"freq"];
+                        NSString *subText = subItem[@"lf"];
+                        NSNumber *subSince = subItem[@"since"];
+                        variant = [[Variants alloc] initWithText:subText andFrequence:subFreq andSince:subSince];
+                        [variants addObject:variant];
+                    }
+                    term = [[Terms alloc] initWithText:text andFrequence:freq andSince:since andVariants:variants];
+                    [terms addObject:term];
                 }
+                [self setAcronym:_acromyn];
                 block(YES, NULL);
             } else {
-                NSError *error = [[NSError alloc] initWithDomain:@"Response" code:-404 userInfo:NULL];
+                NSDictionary *userInfo = [NSDictionary dictionaryWithObject:@"No items to be displayed" forKey:NSLocalizedDescriptionKey];
+                NSError *error = [[NSError alloc] initWithDomain:@"Response" code:-404 userInfo:userInfo];
                 block(NO, error);
             }
         });

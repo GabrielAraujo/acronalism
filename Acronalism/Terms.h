@@ -15,7 +15,7 @@
     NSMutableArray *variants;
 }
 
--(Terms *) initWithText:(NSString *)_text andFrequence:(NSNumber *)_freq andSince:(NSNumber *)_since andVariants:(NSMutableArray *)_variants;
+-(Terms *) initWithText:(NSString *)_text andFrequence:(NSNumber *)_freq andSince:(NSNumber *)_since andVariants:(NSMutableArray *)_variant;
 
 -(void) setText: (NSString *)_text;
 -(NSString *) getText;

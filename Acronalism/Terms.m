@@ -10,13 +10,13 @@
 
 @implementation Terms
 
--(Terms *) initWithText:(NSString *)_text andFrequence:(int)_freq andSince:(int)_since andVariants:(NSMutableArray *)_variants {
+-(Terms *) initWithText:(NSString *)_text andFrequence:(NSNumber *)_freq andSince:(NSNumber *)_since andVariants:(NSMutableArray *)_variant {
     self = [super init];
     if (self) {
         [self setText:_text];
         [self setFrequence:_freq];
         [self setSince:_since];
-        [self setVariants:_variants];
+        [self setVariants:_variant];
     }
     return self;}
 
@@ -27,17 +27,17 @@
     return text;
 }
 
--(void) setFrequence: (int)_freq {
+-(void) setFrequence: (NSNumber *)_freq {
     freq = _freq;
 }
--(int) getFrequence {
+-(NSNumber *) getFrequence {
     return freq;
 }
 
--(void) setSince: (int)_since {
+-(void) setSince: (NSNumber *)_since {
     since = _since;
 }
--(int) getSince {
+-(NSNumber *) getSince {
     return since;
 }
 

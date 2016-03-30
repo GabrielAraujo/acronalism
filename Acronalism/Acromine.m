@@ -39,7 +39,9 @@
 }
 
 + (void)getAcronymWith:(NSString *)_acronym success:(void (^)(NSURLSessionDataTask *task, id response))_success error:(void (^)(NSURLSessionDataTask *task, NSError *error))_error {
-    NSDictionary *parameters = @{@"sf": _acronym, @"lf": @""};
+    NSCharacterSet *charSet = [NSCharacterSet whitespaceCharacterSet];
+    NSString *withoutSpaceString = [_acronym stringByTrimmingCharactersInSet:charSet];
+    NSDictionary *parameters = @{@"sf": withoutSpaceString, @"lf": @""};
     [[self instance].manager GET:@"dictionary.py" parameters:parameters success:_success failure:_error];
 }
 
